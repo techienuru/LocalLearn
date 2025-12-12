@@ -20,6 +20,17 @@
   --radius-xl: 0.75rem;
   --radius-full: 9999px;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--color-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-secondary);
+  border-radius: 10px;
+}
+
 @layer base {
   body {
     font-family: var(--font-google-lexend);
