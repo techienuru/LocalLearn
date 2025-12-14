@@ -1,3 +1,5 @@
+import { Diamond, PieChart } from "lucide-react";
+
 const LessonPlayer = () => {
   return (
     <div class="relative flex min-h-screen w-full flex-col">
@@ -9,25 +11,7 @@ const LessonPlayer = () => {
           </button>
           <div class="hidden items-center gap-2 sm:flex">
             <div class="size-5 text-primary">
-              <svg
-                fill="none"
-                viewbox="0 0 48 48"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_6_535)">
-                  <path
-                    clip-rule="evenodd"
-                    d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
-                    fill="currentColor"
-                    fill-rule="evenodd"
-                  ></path>
-                </g>
-                <defs>
-                  <clippath id="clip0_6_535">
-                    <rect fill="white" height="48" width="48"></rect>
-                  </clippath>
-                </defs>
-              </svg>
+              <Diamond className="h-5 w-5" />
             </div>
             <h2 class="text-lg font-bold">LocalLearn</h2>
           </div>
@@ -38,26 +22,7 @@ const LessonPlayer = () => {
         </div>
         <div class="flex items-center gap-4">
           <div class="relative flex h-8 w-8 items-center justify-center">
-            <svg class="absolute inset-0" viewbox="0 0 36 36">
-              <circle
-                class="stroke-current text-black/10 dark:text-white/10"
-                cx="18"
-                cy="18"
-                fill="none"
-                r="16"
-                stroke-width="2"
-              ></circle>
-              <circle
-                class="origin-center -rotate-90 transform stroke-current text-primary"
-                cx="18"
-                cy="18"
-                fill="none"
-                r="16"
-                stroke-dasharray="100"
-                stroke-dashoffset="75"
-                stroke-width="2"
-              ></circle>
-            </svg>
+            <PieChart className="absolute inset-0 h-8 w-8 text-black/10 dark:text-white/10" />
             <span class="text-xs font-bold">25%</span>
           </div>
         </div>
